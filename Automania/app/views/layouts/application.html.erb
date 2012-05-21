@@ -7,13 +7,19 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-  <% if user_signed_in? %>
-    Signed in as <%= current_user.email %>. Not you?
+  <div id="header">AUTOMANIA</div>
+ <div id="content">
+  <div id="login">
+    <% if user_signed_in? %>
+      Signed in as <%= current_user.email %>. Not you?
     <%= link_to "Sign out", destroy_user_session_path, :method => :delete %>
-  <% else %>
-    <%= link_to "Sign up", new_user_registration_path %> or <%= link_to "sign in", new_user_session_path %>
+    <% else %>
+      <%= link_to "Sign up", new_user_registration_path %> or <%= link_to "sign in", new_user_session_path %>
   <% end %>
-<%= yield %>
+  </div>
 
+
+
+<%= yield %></div>
 </body>
 </html>

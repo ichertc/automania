@@ -1,10 +1,7 @@
-<h1>header</h1>
-
-
 
 <% @posts.each do |post| %>
 
-<p><b><%= post.name %>: <i>'<%= post.title %>'</i></b><br />
+<div class="content_message"><p><b><%= post.name %>: <i>'<%= post.title %>'</i></b><br />
   <%= post.content %>
 </p>
       <%= link_to 'Show', post %>
@@ -12,8 +9,10 @@
 
 <% if user_signed_in? && current_user.admin? %>
       <%= link_to 'Destroy', post, confirm: 'Are you sure?', method: :delete %>
-<% end %>      
 <% end %>
+</div>      
+<% end %>
+
 
 
 
