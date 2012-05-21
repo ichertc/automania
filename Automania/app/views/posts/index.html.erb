@@ -1,10 +1,10 @@
 
 <% @posts.each do |post| %>
 
-<div class="content_message"><p><b><%= post.name %>: <i>'<%= post.title %>'</i></b><br />
+<div class="content_message"><p><span class="title"><%= post.name %>: <%= link_to post.title, post %></span><br />
   <%= post.content %>
 </p>
-      <%= link_to 'Show', post %>
+     
       <%= link_to 'Edit', edit_post_path(post) %>
 
 <% if user_signed_in? && current_user.admin? %>
