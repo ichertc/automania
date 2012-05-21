@@ -35,15 +35,15 @@ body {
 	margin-bottom: 5px;
 }
 
-.content_message a {
+.content_message a, #login a {
 	text-decoration: none;
 	color: silver;
 }
 
-.content_message a:hover {
+.content_message a:hover, #login a:hover {
 	text-decoration: none;
 	color: gold;
-	font-size: 18px;
+	font-style: italic;
 }
 
 .title {
