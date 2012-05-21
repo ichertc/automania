@@ -32,12 +32,12 @@ body {
 	margin-bottom: 5px;
 }
 
-.content_message a, #login a {
+.content_message a, #login a, .new_post_button a {
 	text-decoration: none;
 	color: silver;
 }
 
-.content_message a:hover, #login a:hover {
+.content_message a:hover, #login a:hover, .new_post_button a:hover {
 	text-decoration: none;
 	color: gold;
 	font-style: italic;
@@ -71,4 +71,13 @@ input, textarea {
 
 .field input {
 	width: 330px;
+}
+
+.new_post_button a {
+	text-decoration:none;
+	color:silver;
+}
+
+.new_post_button {
+	font-size:18px;
 }
