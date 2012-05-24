@@ -1,83 +1,17 @@
-body {
-	min-width:1024px;
-	background-color: grey;
-}
+body {min-width:1024px;	background-color: grey;}
+#header {margin: 0 auto;	width:1200px;	height: 120px;	background-image: url('header.jpg');	font-family: "Times New Roman", Times, serif; font-style:oblique; font-size: 35px;}
+#content {position:relative; top:20px; margin:0 auto;	width:1195px;	text-align:justify;}
+.content_message {border: 1px silver solid;	border-radius: 5px;	padding: 10px;	width:750px;	margin-bottom: 20px;}
+.content_message a{text-decoration: none;	color: silver;}
+.content_message a:hover{text-decoration: none;	color: gold;	font-style: italic;}
+.title {font-style: italic;	font-weight: bold;}
+.title a {text-decoration: none;	color: black;}
+.title a:hover {text-decoration: none;	color: silver; font-size: 16px;}
+input, textarea {background-color:silver;}
+.field {margin-bottom:10px;	width: 100px;}
+.field input {width: 330px;}
+#sidebar { float:right;	width: 400px;	text-align:center;	border: 1px solid silver; border-radius: 5px;}
+	li, h3 {list-style:none; position: relative; right:10px;}
+	#sidebar a {text-decoration:none; color:silver; font-size:20px;}
+	#sidebar a:hover {color:gold; font-size:20px;}
 
-#header {
-	margin: 0 auto;
-	width:1200px;
-	height: 120px;
-	background-image: url('header.jpg');
-	font-family: "Times New Roman", Times, serif;
-	font-style:oblique;
-	font-size: 35px;
-}
-
-#login {
-	text-align:right;
-	margin: 10px;
-}
-
-#content {
-	margin:0 auto;
-	width:1195px;
-	text-align:justify;
-}
-
-.content_message {
-	border: 1px silver solid;
-	border-radius: 5px;
-	padding: 10px;
-	width:700px;
-	margin-bottom: 5px;
-}
-
-.content_message a, #login a, .new_post_button a {
-	text-decoration: none;
-	color: silver;
-}
-
-.content_message a:hover, #login a:hover, .new_post_button a:hover {
-	text-decoration: none;
-	color: gold;
-	font-style: italic;
-}
-
-.title {
-	font-style: italic;
-	font-weight: bold;
-}
-
-.title a {
-	text-decoration: none;
-	color: black;
-}
-
-
-.title a:hover {
-	text-decoration: none;
-	color: silver;
-	font-size: 16px;
-}
-
-input, textarea {
-	background-color:silver;
-}
-
-.field {
-	margin-bottom:10px;
-	width: 100px;
-}
-
-.field input {
-	width: 330px;
-}
-
-.new_post_button a {
-	text-decoration:none;
-	color:silver;
-}
-
-.new_post_button {
-	font-size:18px;
-}
