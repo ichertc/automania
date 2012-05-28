@@ -7,7 +7,7 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-  <div id="header">AUTOMANIA<% if user_signed_in? %>Logged in as <%= current_user.nickname %><% end %>
+  <div id="header">AUTOMANIA<span class="session_name"><% if user_signed_in? %>Logged in as <%= current_user.nickname %><% end %></span>
   </div> 
  <div id="content">
     <div id="sidebar">
