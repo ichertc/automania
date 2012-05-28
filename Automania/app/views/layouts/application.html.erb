@@ -12,16 +12,16 @@
  <div id="content">
     <div id="sidebar">
     <ul>
-      <h3>Account Actions</h3>
+      <div class="header">Account Actions</div>
     <% if user_signed_in? %>
       <li><%= link_to "Edit Profile",  edit_user_registration_path %></li>
       <li><%= link_to "Sign out", destroy_user_session_path, :method => :delete %> </li>
-      <h3>Admin Actions</h3>
+      <div class="header">Admin Actions</div>
       <li><%= link_to 'User List', users_index_path %></li>
     <% else %>
       <li><%= link_to "Sign up", new_user_registration_path %> or <%= link_to "sign in", new_user_session_path %></li>
     <% end %>
-    <h3>Post Actions</h3>
+    <div class="header">Post Actions</div>
       <li><%= link_to 'Create New Post', new_post_path %></li>
     </ul>
   </div>
